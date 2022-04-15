@@ -6,21 +6,48 @@
   - `if` the number is even print the message " number is even"
   - `if` the number is odd print the message "number is odd"
 */
-
+let num = Number(prompt("Enter a number"));
+  
+if (num % 2 === 0) {
+   alert("Number is even")
+} else {
+   alert("Number is odd")
+}
+  
 // 2. Write a program to accept two numbers from user using`prompt` and alert the max value.
 
 // 3. Convert the above code using`?` terniary operator
 
-/*
+
+let numA = Number(prompt("Enter a minimum number"));
+let numB = Number(prompt("Enter a maximum number"));
+   
+ if(num>45){
+   alert("This is maximum Number")
+ }
+ 
+ num < 45 && num > 45 ? alert("This is min-value"): alert("This is max-Value");
+ /*
+
+
 4. Write a program that asks the user for the house name and check the following conditions:
 
   - `if` house name is "stark" then print the message " Winter is coming"
   - `if` house name is "lannister" then print the message " A lannister always pays his debt"
   - `else` print the message " All men must die"
 */
+let houseName = prompt("Enter Your house name");
+   if ( houseName = "stark") {
+       alert("Winter is coming")
+   } else if( houseName =  "lannister" ) {
+      alert("A lannister always pays his debt")
+      
+    } else{
+      alert("All men must die")
+    }
 
 // 5. Convert the above code using`?` terniary operator
-
+houseName == stark || houseName == lannister ? alert("Winter is coming"): alert("A lannister always pays his debt") ;
 // Switch
 
 // 6. Write a program that takes the number of the month(1 - 12) and alert number of days in the month.
