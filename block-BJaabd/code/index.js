@@ -10,7 +10,17 @@ Write a program that asks the user his/her age and check for the following condi
 - `if` the age is greater than 55 then print the message " You are too old to participate in the marthon".
 👇
 */
-
+let age = Number(prompt("Enter your age?"));
+  if(age >=12 && age <=55){
+    alert("You can participate in the marathon");
+   }else if(age >= 4 && age <= 11){
+    alert(" You are too young to participate in the marathon");
+      }else if(age < 4){
+    alert(" Hey Kiddo! Can You Walk ?");
+  }else if(age > 55){
+    alert(" You are too old to participate in the marthon");
+ }
+ 
 // Loops
 /*
 Given a positive integer `n`. Print the word (hello) in format of heeeello (letter 'e' must be repeated `n` times). Take input from prompt and print the result in alert.
@@ -20,6 +30,7 @@ n = 1 => output: hello
 n = 7 => output: heeeeeeello
 👇
 */
+  
 // [Your code goes here]
 
 /*
@@ -46,7 +57,38 @@ Take a number value from user and alert the message if it matches the conditions
 
 */
 // [Your code goes here]
-
+ let numberValue = Number(prompt("Enter your Number?"));
+  switch(numberValue){
+    case 1:
+    alert("ONE");
+    break;
+    case 2:
+    alert("Two");
+    break;
+    case 3:
+    alert("Three");
+    break;
+    case 4:
+    alert("Four");
+    break;
+    case 5:
+    alert("Five");
+    break;
+    case 6:
+    alert("six");
+    break;
+    case 7:
+    alert("seven");
+    break;
+    case 8:
+    alert("Eight");
+    break;
+    case 9:
+    alert("Nine");
+    break;
+    default:
+    alert("Please Try Again");
+  }
 /*
 🎖Using switch statement do the following
 
@@ -62,12 +104,45 @@ Take the value of `marks` (0-100) from user using `prompt` and `alert` the messa
 */
 
 // [Your code goes here]
-
+let marks = Number(prompt("Enter your Marks?"));
+  switch(true){
+    case marks > 90:
+    alert("AA");
+    break;
+    case marks >80 && marks <=90:
+    alert("AB");
+    break;
+    case  marks >70 && marks <=80 :
+    alert("BB");
+    break;
+    case marks >60 && marks <=70 :
+    alert("BC");
+    break;
+    case  marks >50 && marks <= 60:
+    alert("CC");
+    break;
+    case marks > 40 && marks <= 50 :
+    alert("CD");
+    break;
+    case marks > 30 && marks <= 40:
+    alert("DD");
+    break;
+    case  marks <= 30:
+    alert("FF");
+    
+    
+  }
 /*
  🎖Write a JavaScript program that takes two `integers` from user (using prompt) and alerts the larger number.
 */
 // [your code goes here]
-
+let numA = prompt("Enter your numA");
+let numB = prompt("Enter your numB"); 
+  if(numA > numB){
+    alert("numA  is  greater");
+  }else{
+    alert("numA  is  greater");
+  }
 /*
 🎖Write a JavaScript conditional statement to find the sign (+, -) of product of three numbers. Take those three numbers from user using `prompt`. Display an alert box with the specified sign.
 */
